@@ -4,9 +4,7 @@
 ### Requisitos
 
 - Spring boot (https://spring.io/projects/spring-boot)
-- Google books (https://developers.google.com/books/)
-- Material Design (https://material.io/guidelines/)
-- Banco de dados NoSQL (MongoDB, Firebase, etc) ou in-memory
+- Google books (https://developers.google.com/books/) não utilizar lib
 
 ### Diferencial
 
@@ -21,6 +19,14 @@
 3. Faremos nossa análise e te daremos um retorno.
 
 ## Detalhes da prova
+
+### Critérios analisados
+
+- Arquitetura do projeto (camadas)
+- Aplicação de orientação a objeto
+- Funcionalidades e funcionamento
+
+### O que você deve desenvolver
 
 - A prova consiste em criar uma interface Web para interação com o Google books.
 - Seu projeto deve também conter um arquivo README com a explicação das tecnologias utilizadas e as instruções para rodar.
