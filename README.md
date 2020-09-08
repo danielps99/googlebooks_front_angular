@@ -36,17 +36,15 @@
 
 A App deve conter as seguintes funcionalidades:
 
-1. Login - restrição de acesso com usuário e senha (não precisa ser login em banco)
-2. Menus - Pesquisar / Favoritos (default)
-3. Pesquisar livros no Google books e exibir em tela (com a foto, descrição e título do livro)
-4. Salvar livros em uma lista de "meus favoritos" (localmente na base escolhida)
-5. Permitir excluir livros favoritos
-6. Exibir alerta de confirmaçao de exclusão
-7. Logout
+1. Menus - Pesquisar / Favoritos (default)
+2. Pesquisar livros no Google books e exibir em tela (com a foto, descrição e título do livro)
+3. Salvar livros em uma lista de "meus favoritos" (localmente na base escolhida)
+4. Permitir excluir livros favoritos
+5. Exibir alerta de confirmaçao de exclusão
 
 ### Especificações técnicas
 
-* O App deve se comunicar com o Google Books API pelo backend Java.
+* O App deve se comunicar com o Google Books API pelo backend Java, utilizando HttpClient sem o uso das libs do GoogleBooks.
 
 ## Dúvidas? Envio da prova?
 `testes@lyncas.net`
