@@ -1,5 +1,5 @@
 # Google Livros
-##Frontend
+## Frontend
 Frontend que utiliza Angular.
 O projeto backend que expoe api para este frontend está em: https://github.com/danielps99/googlebooks_back_java
 
