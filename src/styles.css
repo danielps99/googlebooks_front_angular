@@ -1,0 +1,9 @@
+:root {
+  --corClara: #ffffff;
+  --corMedia: #0080ff;
+  --corMediaOpac: rgb(0,64,255, 0.35);
+  --corEscura:#4e4e4e;
+}
+.mtop-25{
+  margin-top: 25px;
+}

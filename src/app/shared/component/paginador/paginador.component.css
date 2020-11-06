@@ -1,0 +1,66 @@
+#paginador {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#paginador a{
+  text-decoration: none;
+  display: inline-block;
+  color: var(--corMedia);
+}
+
+#paginador .link-page{
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid var(--corMedia);
+  border-radius: 50%;
+  margin: 0px 10px 0px 10px;
+}
+
+#paginador .link-previous:before,
+#paginador .link-next:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+#paginador .link-previous:before {
+  border-right: 12px solid var(--corMedia);
+}
+
+#paginador .link-next:before {
+  border-left: 12px solid var(--corMedia);
+}
+
+#paginador .link-previus-opaco:before {
+  border-right-color: var(--corMediaOpac);
+  cursor: default;
+}
+
+#paginador .link-next-opaco:before {
+  border-left-color: var(--corMediaOpac);
+  cursor: default;
+}
+
+#paginador .pagina-atual{
+  background-color: var(--corMedia);
+  color: var(--corClara);
+}
+
+@media (max-width: 360px) {
+  #paginador{
+    margin-top: 18px;
+  }
+
+  #paginador .link-previous:before {
+    margin-right: 40px;
+  }
+
+  #paginador .link-next:before {
+    margin-left: 40px;
+  }
+}

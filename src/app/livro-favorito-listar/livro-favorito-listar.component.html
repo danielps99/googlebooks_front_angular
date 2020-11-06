@@ -1,0 +1,41 @@
+<div id="pagina-list">
+  <header>
+    <form id="form-busca" onsubmit="return false">
+      <div class="form-group">
+        <label for="pesquisar-livro"><b>Livros favoritos</b></label>
+        <input type="text" (input)="filtrarEntradaUsuarioBusca($event)" class="form-control" id="pesquisar-livro"
+          placeholder="Pesquisar livros favoritos">
+      </div>
+    </form>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row mtop-25" *ngFor="let favorito of livrosFavoritos">
+        <div class="col-sm-2">
+          <img class="img-fluid img-thumbnail" src="{{favorito.livro.informacaoVolume.linkImagens.thumbnail}}"
+            alt="{{favorito.livro.informacaoVolume.titulo}}">
+        </div>
+        <div class="col-sm-8">
+          <h4 class="text-center">{{favorito.livro.informacaoVolume.titulo}}</h4>
+          <p class="text-justify">{{favorito.livro.informacaoVolume.descricao}}</p>
+          <p class="text-justify">Quantidade de páginas: {{favorito.livro.informacaoVolume.quantidadePaginas}}</p>
+          <p class="text-justify">Editora: {{favorito.livro.informacaoVolume.editora}}. Ano Publicação:
+            {{favorito.livro.informacaoVolume.dataPublicacao}}</p>
+        </div>
+        <div class="col-sm-2">
+          <p *ngFor="let ident of favorito.livro.informacaoVolume.identificadoresIndustriais">
+            {{ident.tipo}} : {{ident.identificador}}
+          </p>
+
+          <button class="btn btn-outline-primary" mwlConfirmationPopover
+            popoverMessage="Remover dos favoritos: {{favorito.livro.informacaoVolume.titulo}}?"
+            (confirm)="removerFavorito(favorito.id)">
+            <span class="glyphicon glyphicon-trash"></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+    <app-paginador [total]="totalRegistros" [limit]="maxResult" (navegar)="navegarPagina($event)"></app-paginador>
+  </section>
+</div>
