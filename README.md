@@ -1,6 +1,6 @@
 # Google Livros
 ## Frontend
-Frontend que utiliza Angular.
+Frontend utilizando Angular.
 O projeto backend que expoe api para este frontend está em: https://github.com/danielps99/googlebooks_back_java
 
 ### Funcionalidades
@@ -18,14 +18,14 @@ O projeto backend que expoe api para este frontend está em: https://github.com/
     - Instale pela linha de comando do seu SO. Basta digitar: npm install -g @angular/cli
 
 ## Como executar aplicação
-#####Baixar dependências da aplicação
+##### Baixar dependências da aplicação
 1. No diretorio do Projeto digite:
     - npm install
-#####Executar aplicação
+##### Executar aplicação
 1. No diretorio do Projeto digite:
     - ng serve
 2. Abra o navegador no endereço: http://localhost:4200.
-#####Executar testes unitários da aplicação
+##### Executar testes unitários da aplicação
 1. No diretorio do Projeto digite:
     - ng test
     
